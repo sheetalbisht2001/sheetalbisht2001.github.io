@@ -1,13 +1,610 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!--========== UNICONS ==========-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <!--========== BOXICONS ==========-->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+
+    <!--========== MAIN CSS ==========-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
+
+    <script src="https://kit.fontawesome.com/2e6c5ea9e6.js" crossorigin="anonymous"></script>
+
+
+    <title>Sheetal_Bisht_portfolio</title>
 </head>
+
 <body>
-    HI , Welcome to my site.
-    This is sheetal bisht backend developer.
+    <!--========== SIDEBAR ==========-->
+    <div class="nav__toggle" id="nav-toggle">
+        <i class="uil uil-bars"></i>
+    </div>
+    <aside class="sidebar" id="sidebar">
+        <nav class="nav">
+            <div class="nav__logo">
+                <a href="index.html" class="nav__logo-text">SB</a>
+            </div>
+            <div class="nav__menu">
+                <div class="menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">Home</a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">About</a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#skills" class="nav__link">Skills</a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#project" class="nav__link">Projects</a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="https://drive.google.com/file/d/1Y7GsZWH_E5EXHx7-MHJBNKcr6z0H21t2/view?usp=share_link"
+                                class="nav__link">Resume</a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+
+            <div class="btn__share">
+                <i class="uil uil-share-alt social__share"></i>
+            </div>
+            <div class="nav__close" id="nav-close">
+                <i class="uil uil-times"></i>
+            </div>
+        </nav>
+    </aside>
+
+
+
+    <!--========== MAIN ==========-->
+
+    <main class="main">
+
+
+        <!--===== Home =====-->
+
+        <section class="home" id="home">
+            <div class="home__container container grid">
+                <div class="home__social">
+                    <span class="home__social-follow">Let's Connect</span>
+                    <div class="home__social-links">
+
+
+                        <a href="https://www.facebook.com/sheetal.bisht.3110" target="_blank" class="home__social-link">
+                            <i class="uil uil-facebook-f"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/sheetal-bisht-a75289202/" target="_blank"
+                            class="home__social-link">
+                            <i class="uil uil-linkedin"></i>
+                        </a>
+                        <a href="https://twitter.com/sheetalbishtt" target="_blank" class="home__social-link">
+                            <i class="uil uil-twitter"></i>
+                        </a>
+                        <a href="https://github.com/sheetalbisht2001" target="_blank" class="home__social-link">
+                            <i class="uil uil-github"></i>
+                        </a>
+
+                    </div>
+
+
+
+
+                </div>
+
+
+
+                <div class="home__data">
+                    <!-- <img src="assets/img/crop.jpeg" alt="" class="home__img"> -->
+
+                    <h1 class="home__title">Hi, I am Sheetal Bisht</h1>
+                    <h3 class="home__subtitle">Java Backend Developer</h3>
+                    <p class="home__description">Enthusiastic back-end developer, proficient in java and related
+                        frameworks, data structures, and algorithms. Passionate about working in the software industry.
+                        Collaborative team player who is proficient in working with interdisciplinary teams and
+                        executing goal-oriented projects. Looking forward to developing products that help in making
+                        people’s lives better and becoming an integral part of an organization that helps me grow.
+                    </p>
+
+
+                    <a href="https://drive.google.com/file/d/1Y7GsZWH_E5EXHx7-MHJBNKcr6z0H21t2/view?usp=share_link"
+                        class="button"><i class="uil uil-user button_icon"></i>
+                        Resume
+                    </a>
+
+                    <a href="#about" class="button"><i class="uil uil-user button_icon"></i>
+                        More About Me
+                    </a>
+
+
+                </div>
+
+            </div>
+
+
+
+            <div class="my__info">
+
+
+
+                <div class="info__item">
+                    <i class="uil uil-whatsapp info__icon"></i>
+
+                    <div>
+                        <h3 class="info__title">Phone</h3>
+                        <span class="info__subtitle"><a href="tel:+918373985655" class="changeCol">+918373985655 </a></span>
+                    </div>
+                </div>
+
+                <div class="info__item">
+                    <i class="uil uil-envelope-edit info__icon"></i>
+
+                    <div>
+                        <h3 class="info__title">Email</h3>
+                        <span class="info__subtitle"><a href="mailto:sheetalbisht41@gmail.com" class="changeCol">sheetalbisht41@gmail.com
+                            </a></span>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+
+
+        <!--===== About =====-->
+
+        <section class="about section" id="about">
+            <h2 data-heading="My Intro" class="section__title">About Me</h2>
+
+            <div class="about__container container grid">
+                <img src="assets/img/sy.png" alt="" class="about__img">
+
+                <div class="about__data">
+                    <h3 class="about__heading">Hi, I am Sheetal Bisht </h3>
+                    <p class="about__description"> from Nainital, Uttarakhand. I have completed my graduation in
+                        Bachelor of Commerce from Delhi University, Delhi.
+                        Apart from coding, some other things that I love from my heart are as follows! </p>
+
+                    <div class="about__info">
+
+                        <div class="about__box">
+                            <img src="https://cdn-icons-png.flaticon.com/512/2519/2519215.png" class="logo-aboutme" alt="">
+                            <h3 class="about__title">Gymming</h3>
+                        </div>
+
+                        <div class="about__box">
+                            <img src="https://cdn-icons-png.flaticon.com/512/2060/2060284.png" class="logo-aboutme" alt="">
+                            <h3 class="about__title">Travelling</h3>
+                        </div>
+
+                        <div class="about__box">
+                            <img src="https://cdn-icons-png.flaticon.com/512/2112/2112223.png" class="logo-aboutme" alt="">
+
+                            <h3 class="about__title">Playing Badminton</h3>
+                        </div>
+
+                        <div class="about__box">
+                            <img src="https://cdn-icons-png.flaticon.com/512/1830/1830839.png" class="logo-aboutme" alt="">
+                            <h3 class="about__title">Cooking</h3>
+                        </div>
+                    </div>
+                    <a href="#contact" class="button"><i class="uil uil-navigator button__icon"></i>
+                        Contact Me
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!--===== Qualification =====-->
+
+
+        <section class="qualification section">
+            <h2 data-heading="My Journey" class="section__title">Qualification</h2>
+
+            <div class="qualification__container container grid">
+                <div class="education">
+                    <h3 class="qualification__title">
+                        <i class="uil uil-graduation-cap"></i>Education
+                    </h3>
+
+                    <div class="timeline">
+                        <div class="timeline__item">
+                            <div class="circle__dot"></div>
+                            <h3 class="timeline__title">Masai School, Bangalore</h3>
+                            <p class="timeline__text">Full Stack Web Development</p>
+                            <span class="timeline__date"><i class="uil uil-calendar-alt"></i>
+                                March 2022 - Present
+                            </span>
+                        </div>
+
+                        <div class="timeline__item">
+                            <div class="circle__dot"></div>
+                            <h3 class="timeline__title">Sri Aurobindo College, New Delhi</h3>
+                            <p class="timeline__text">Bachelor of Commerce</p>
+                            <span class="timeline__date"><i class="uil uil-calendar-alt"></i>
+                                2018 -2021
+                            </span>
+                        </div>
+
+                        <div class="timeline__item">
+                            <div class="circle__dot"></div>
+                            <h3 class="timeline__title">South Delhi Public School, New Delhi</h3>
+                            <p class="timeline__text">Intermediate</p>
+                            <span class="timeline__date"><i class="uil uil-calendar-alt"></i>
+                                March 2018
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="experience">
+                    <h3 class="qualification__title">
+                        <i class="uil uil-suitcase"></i>Experience
+                    </h3>
+
+                    <div class="timeline">
+                        <div class="timeline__item">
+                            <div class="circle__dot"></div>
+                            <h3 class="timeline__title">Vestige Marketing pvt ltd</h3>
+                            <p class="timeline__text">Marketing Associate</p>
+                            <span class="timeline__date"><i class="uil uil-calendar-alt"></i>
+                                Sep 2020 - Feb 2022
+                            </span>
+                        </div>
+
+
+                    </div>
+        </section>
+
+
+
+
+        <!--===== Skills =====-->
+
+
+
+        <section class="skills" id="skills">
+            <div class="max-width">
+                <br>
+                <br>
+                <center>
+                    <h2 class="title">My Skills</h2>
+
+                </center>
+                <br>
+                <br>
+                <div class="skills-content sc">
+                    <div class="card">
+                        <div class="sbox html">
+                            <img class="simg ihtml" src="assets/img/java.svg" alt="java">
+                            <div class="text">JAVA</div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="sbox css">
+                            <img class="simg icss" src="assets/img/aws.svg" alt="aws">
+                            <div class="text">AWS</div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="sbox js">
+                            <img class="simg ijs" src="assets/img/hi.svg" alt="hn">
+                            <div class="text">HIBERNATE</div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="sbox react">
+                            <img class="simg ireact" src="assets/img/sp.svg" alt="SPRING">
+                            <div class="text">SPRING</div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="sbox rdx">
+                            <img class="simg irdx" src="assets/img/sql.svg" alt="MySQL">
+                            <div class="text"> MySQL</div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="sbox ">
+                            <img class="simg idsa" src="assets/img/github.svg" alt="gb">
+                            <div class="text">GITHUB</div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="sbox chkr">
+                            <img class="simg ichkr" src="assets/img/html.svg" alt="html">
+                            <div class="text">HTML</div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="sbox bs">
+                            <img class="simg ibs" src="assets/img/js.svg" alt="js">
+                            <div class="text">JAVASCRIPT</div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            </div>
+        </section>
+
+
+        <!-- Project -->
+
+        
+      
+
+
+        <section class="project section" id="project">
+             <br>
+                <br>
+            <center>
+            <h2 class="section-title">Projects</h2>
+        </center>
+        <br>
+        <br>
+
+            <div class="project__container bd-grid">
+                <div class="project__img">
+                    <a href="https://colneofmytheresa.netlify.app/" >  <img src="./assets/img/theresa.png" style="padding-bottom: 0.5rem;" alt=""></a>
+                
+                
+                    
+
+                    <p>
+                       <h2 class="S">MY THERESA</h2>
+                        <br>  <br> 
+                        Mytheresa is an online shopping destination for children, men and women's luxury clothing, bags, shoes, and accessories.
+                       <br> <br> A collaborative project built by a team of 5, executed in 6 days.
+                        <br><br> Tech Stack :- HTML | CSS | JavaScript
+                    </p>
+                    <div class="project__link">
+                        <a href="https://colneofmytheresa.netlify.app/" target="_blank" class="project-icon">
+                            <i class='bx bx-link-external bx-spin-hover' style="padding: 0.5rem;"></i>
+                        </a>
+                        <a href="https://github.com/bkcjanta/detailed-orange-964" target="_blank" class="project-icon">
+                            <i class='bx bxl-github bx-spin-hover' style="padding: 0.5rem;"></i>
+                        </a>
+                    </div>
+                </div>
+            
+
+                <div class="project__img">
+                    <a href="https://candid-zabaione-3fa313.netlify.app/"> <img src="./assets/img/tripadvisor.png" style="padding-bottom: 0.5rem;" alt=""></a>
+
+                    <p>
+                       <h2 class="S">TRIP ADVISOR</h2>
+                        <br> <br> It offers online hotel reservations and bookings for transportation, lodging, travel experiences, and restaurants.
+                       <br>  <br> A collaborative project built by a team of 5, executed in 5 days.
+                       <br>  <br> Tech Stack :- HTML | CSS | JavaScript
+                    </p>
+                    <div class="project__link">
+                        <a href="https://candid-zabaione-3fa313.netlify.app/" target="_blank" class="project-icon">
+                            <i class='bx bx-link-external bx-spin-hover' style="padding: 0.5rem;"></i>
+                        </a>
+                        <a href="https://github.com/gk072745/rabid-flower-3002" target="_blank" class="project-icon">
+                            <i class='bx bxl-github bx-spin-hover' style="padding: 0.5rem;"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project__img">
+                    <a href="https://wonderful-semifreddo-8bb941.netlify.app/">  <img src="./assets/img/ideakart.png" style="padding-bottom: 0.5rem;" alt=""></a>
+
+                    <p>
+                       <h2 class="S">IDEAKART</h2>
+                        <br>  <br> Ideakart is a site that gives an idea about the book we want to buy. it offer a huge collection of books in diverse categories.
+                       <br>   <br> A collaborative project built by a team of 5, executed in 5 days.
+                       <br>  <br> Tech Stack :- HTML | CSS | JavaScript
+                    </p>
+                    <div class="project__link">
+                        <a href="https://wonderful-semifreddo-8bb941.netlify.app/" target="_blank" class="project-icon">
+                            <i class='bx bx-link-external bx-spin-hover' style="padding: 0.5rem;"></i>
+                        </a>
+                        <a href="https://github.com/peeyush015/exotic-tail-7975" target="_blank" class="project-icon">
+                            <i class='bx bxl-github bx-spin-hover' style="padding: 0.5rem;"></i>
+                        </a>
+                    </div>
+                </div>
+
+            
+
+        
+
+            </div>
+        </section>
+
+
+
+
+        <!-- Github Calender -->
+        <section class="services" id="services">
+            <div class="content">
+                <br>
+                <br>
+                <br>
+                <br>
+                <center>
+               <h2 class="title"><span> Github Contribution</span></h2>
+            </center>
+            <br>
+            <br>
+            <br>
+            <br>
+                <div class="calendar"></div>
+            </div>
+            <p style="text-align: center;">
+                
+                <br>
+                <br>
+                <br>
+                <br>
+                <img
+                    src="https://github-readme-stats.vercel.app/api?username=sheetalbisht2001&show_icons=true&theme=midnight-purple" />
+                    <br>
+                    <br>
+                <br>
+                <img
+                    src="https://github-readme-streak-stats.herokuapp.com/?user=sheetalbisht2001&theme=midnight-purple" />
+                    <br>
+                    <br>
+                <br>
+                <img
+                    src="https://github-readme-stats.vercel.app/api/top-langs/?username=Sheetalbisht2001&theme=midnight-purple" />
+                    <br>
+                    <br>
+                <br>
+            </p>
+        </section>
+
+
+
+        <!--===== Contact =====-->
+
+  <div id="contact" data-aos="fade-in">
+            <div class="container">
+                <div class="row contact-karo">
+                    <div class="contact-left">
+                        <h2 class="sub-title">Contact Me</h2>
+                        <p><i id="email" class="fa-solid fa-envelope-open"></i> sheetalbisht41@gmail.com</p>
+                        <p><i id="call" class="fa-solid fa-square-phone"></i> +918373985655</p>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/sheetal-bisht-a75289202/" target="_blank"><i id="linkedIN"
+                                    class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://github.com/sheetalbisht2001" target="_blank"><i
+                                    class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder=" Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+
+        <!--===== FOOTER =====-->
+
+
+
+        <footer class="footer">
+            <div class="footer__bg">
+                <div class="footer__container container grid">
+                    <div>
+                        <h1 class="footer__title">Sheetal Bisht</h1>
+                        <span class="footer__subtitle">Backend developer</span>
+                    </div>
+
+                    <ul class="footer__links">
+
+                        <li>
+                            <a href="#project" class="footer__link">Projects</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="footer__link">Contact</a>
+                        </li>
+                    </ul>
+
+                    <div class="footer__social">
+                        <a href="https://www.facebook.com" target="_blank" class="footer__social">
+                            <i class="uil uil-facebook-f"></i>
+                        </a>
+
+                        <a href="https://www.twitter.com" target="_blank" class="footer__social">
+                            <i class="uil uil-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <p class="footer__copy">&#169; sheetalbisht. All right reserved</p>
+            </div>
+        </footer>
+    </main>
+
+
+
+   
+
+
+
+
+
+
+    
+
+
+    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+
+
+
+
+    <script src="script.js"></script>
+
+    <script>
+        
+
+
+        GitHubCalendar(".calendar", "sheetalbisht2001");
+  // or enable responsive functionality
+  GitHubCalendar(".calendar", "sheetalbisht2001", { responsive: true });
+
+    </script>
+
+<form name="submit-to-google-sheet">
+    <input name="email" type="email" placeholder="Email" required>
+    <button type="submit">Send</button>
+  </form>
+  
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbx0-1gunw_OgUpB_uZ-O_E954TOYtTFUQ-APqotSkdKafq7REOix-LJm8mlHjJTiVZS/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
 </body>
+
 </html>
